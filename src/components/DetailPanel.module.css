@@ -1,0 +1,93 @@
+.panel {
+  width: 100%;
+  font-family: monospace;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 1rem;
+  box-sizing: border-box;
+  animation: slideIn 200ms ease-out forwards;
+  overflow: auto;
+  margin-top: 0.5rem;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(10px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.fastId {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0 0.25rem;
+  line-height: 1;
+}
+
+.closeBtn:hover {
+  color: #111827;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.sectionLabel {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9ca3af;
+  margin: 0.75rem 0 0.35rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+  font-size: 0.875rem;
+}
+
+.rowKey {
+  color: #6b7280;
+}
+
+.rowVal {
+  font-family: monospace;
+}
+
+.noData {
+  color: #9ca3af;
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+.footer {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.7rem;
+  color: #9ca3af;
+}

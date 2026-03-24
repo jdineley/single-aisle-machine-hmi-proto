@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.heading {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.7rem;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #64748b;
+}
+
+.chart {
+  flex: 1;
+  min-height: 0;
+  /* position: relative; */
+}
+
+/* .chartInner {
+  position: absolute;
+  inset: 0;
+  min-height: 200px;
+} */
