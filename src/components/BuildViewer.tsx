@@ -118,11 +118,11 @@ export default function BuildViewer({ panelId, assetId, fasteners, selected, onS
     manifestRef.current = null;
 
     Promise.all([
-      fetch(`/panels/${loadId}/panel.svg`).then((r) => {
+      fetch(`${import.meta.env.BASE_URL}panels/${loadId}/panel.svg`).then((r) => {
         if (!r.ok) throw new Error(`SVG fetch failed: ${r.status}`);
         return r.text();
       }),
-      fetch(`/panels/${loadId}/manifest.json`).then((r) => {
+      fetch(`${import.meta.env.BASE_URL}panels/${loadId}/manifest.json`).then((r) => {
         if (!r.ok) throw new Error(`Manifest fetch failed: ${r.status}`);
         return r.json() as Promise<ViewManifest>;
       }),
